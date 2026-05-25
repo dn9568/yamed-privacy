@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>นโยบายความเป็นส่วนตัว — YaMed</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      background: #F4F2FF;
+      color: #1A1A2E;
+      line-height: 1.75;
+    }
+    header {
+      background: linear-gradient(135deg, #7C6FD8, #5142C2);
+      color: #fff;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+    header h1 { font-size: 2rem; font-weight: 800; margin-bottom: 8px; }
+    header p  { opacity: 0.85; font-size: 0.95rem; }
+    main {
+      max-width: 720px;
+      margin: 40px auto;
+      padding: 0 24px 80px;
+    }
+    section { margin-bottom: 36px; }
+    h2 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #5B4FCF;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 2px solid #EDE9FE;
+    }
+    p  { margin-bottom: 12px; color: #374151; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; color: #374151; }
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      padding: 28px 32px;
+      box-shadow: 0 4px 20px rgba(91,79,207,0.08);
+      border: 1px solid #E8E4FF;
+    }
+    .updated {
+      text-align: center;
+      font-size: 0.85rem;
+      color: #9CA3AF;
+      margin-bottom: 32px;
+    }
+    a { color: #5B4FCF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9CA3AF;
+      padding: 24px;
+      border-top: 1px solid #EDE9FE;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>💊 YaMed</h1>
+  <p>นโยบายความเป็นส่วนตัว (Privacy Policy)</p>
+</header>
+
+<main>
+  <p class="updated">อัปเดตล่าสุด: 25 พฤษภาคม 2568</p>
+
+  <div class="card">
+
+    <section>
+      <h2>1. ข้อมูลที่เราเก็บ</h2>
+      <p>YaMed เก็บข้อมูลเท่าที่จำเป็นสำหรับการทำงานของแอปเท่านั้น ได้แก่:</p>
+      <ul>
+        <li><strong>ข้อมูลยา</strong> — ชื่อยา ขนาดยา เวลากิน หมายเหตุ ที่คุณกรอกเอง</li>
+        <li><strong>ประวัติการกินยา</strong> — บันทึกว่าวันไหนกินยาครบหรือไม่</li>
+        <li><strong>ข้อมูลตัวตน (เฉพาะเมื่อเข้าสู่ระบบ)</strong> — อีเมลและชื่อจาก Google Sign-In เพื่อสำรองข้อมูลบน Cloud</li>
+        <li><strong>ตั้งค่าส่วนตัว</strong> — avatar ที่เลือก, ธีมสี, Streak badge</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>2. วิธีที่เราใช้ข้อมูล</h2>
+      <ul>
+        <li>แสดงรายการยาและส่งการแจ้งเตือนตรงเวลา</li>
+        <li>คำนวณ Streak เพื่อสร้างแรงบันดาลใจในการกินยาต่อเนื่อง</li>
+        <li>สำรองและซิงค์ข้อมูลข้ามอุปกรณ์ (เฉพาะผู้ใช้ที่เข้าสู่ระบบ)</li>
+        <li><strong>เราไม่ขาย ไม่แชร์ และไม่ใช้ข้อมูลของคุณเพื่อโฆษณา</strong></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. การจัดเก็บข้อมูล</h2>
+      <ul>
+        <li><strong>บนอุปกรณ์</strong> — ข้อมูลยาและการตั้งค่าถูกเก็บใน AsyncStorage บนอุปกรณ์ของคุณโดยตรง ไม่ผ่านเซิร์ฟเวอร์</li>
+        <li><strong>Cloud (optional)</strong> — หากคุณเลือก Sign in ด้วย Google ข้อมูลจะถูกเข้ารหัสและจัดเก็บบน Firebase (Google Cloud) ภายใต้นโยบายความปลอดภัยของ Google</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. การแชร์ข้อมูลกับบุคคลที่สาม</h2>
+      <p>เราไม่แชร์ข้อมูลส่วนตัวของคุณกับบุคคลภายนอก ยกเว้น:</p>
+      <ul>
+        <li><strong>Firebase / Google</strong> — สำหรับ Authentication และ Cloud Firestore (เฉพาะผู้ใช้ที่เข้าสู่ระบบ) ดูนโยบายของ Google ได้ที่ <a href="https://policies.google.com/privacy" target="_blank">policies.google.com/privacy</a></li>
+        <li><strong>กฎหมาย</strong> — หากมีคำสั่งทางกฎหมายบังคับให้เปิดเผย</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. การแจ้งเตือน (Push Notifications)</h2>
+      <p>YaMed ขอสิทธิ์ส่ง Push Notification เพื่อเตือนให้คุณกินยาตรงเวลา คุณสามารถปิดการแจ้งเตือนได้ตลอดเวลาในการตั้งค่าระบบของอุปกรณ์ การปิดแจ้งเตือนไม่มีผลกระทบต่อข้อมูลยาของคุณ</p>
+    </section>
+
+    <section>
+      <h2>6. ข้อมูลสุขภาพ</h2>
+      <p>YaMed <strong>ไม่ได้เป็นแอปทางการแพทย์</strong> ข้อมูลยาและการแจ้งเตือนในแอปมีไว้เพื่อช่วยให้คุณจำกินยาเท่านั้น ไม่ใช่คำแนะนำทางการแพทย์ กรุณาปรึกษาแพทย์หรือเภสัชกรสำหรับข้อมูลยาที่ถูกต้อง</p>
+    </section>
+
+    <section>
+      <h2>7. สิทธิของคุณ</h2>
+      <ul>
+        <li><strong>ลบข้อมูล</strong> — คุณสามารถลบยาทั้งหมดในแอปได้ตลอดเวลา หรือถอนการติดตั้งแอปเพื่อลบข้อมูลบนอุปกรณ์</li>
+        <li><strong>ลบข้อมูล Cloud</strong> — ส่งคำขอมาที่ <a href="mailto:mangaerlza@gmail.com">mangaerlza@gmail.com</a> เพื่อลบข้อมูลจาก Firebase</li>
+        <li><strong>ส่งออกข้อมูล</strong> — ติดต่อเราหากต้องการสำเนาข้อมูลของคุณ</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. ความปลอดภัย</h2>
+      <p>เราใช้ Firebase Security Rules เพื่อให้มั่นใจว่าผู้ใช้แต่ละคนเข้าถึงได้เฉพาะข้อมูลของตัวเอง ข้อมูลทั้งหมดที่ส่งระหว่างแอปและ Firebase ถูกเข้ารหัสด้วย HTTPS/TLS</p>
+    </section>
+
+    <section>
+      <h2>9. เด็กและผู้เยาว์</h2>
+      <p>YaMed ไม่ได้ออกแบบมาสำหรับเด็กอายุต่ำกว่า 13 ปี หากพบว่ามีการเก็บข้อมูลจากเด็กโดยไม่ได้รับความยินยอม เราจะลบข้อมูลนั้นทันที</p>
+    </section>
+
+    <section>
+      <h2>10. การเปลี่ยนแปลงนโยบาย</h2>
+      <p>หากมีการเปลี่ยนแปลงนโยบายความเป็นส่วนตัวที่มีนัยสำคัญ เราจะแจ้งให้ทราบผ่าน App Store / Play Store หรืออัปเดตวันที่ด้านบนของหน้านี้</p>
+    </section>
+
+    <section>
+      <h2>11. ติดต่อเรา</h2>
+      <p>หากมีคำถามเกี่ยวกับนโยบายความเป็นส่วนตัว กรุณาติดต่อ:</p>
+      <p>📧 <a href="mailto:mangaerlza@gmail.com">mangaerlza@gmail.com</a></p>
+    </section>
+
+  </div>
+</main>
+
+<footer>
+  &copy; 2568 YaMed — สงวนลิขสิทธิ์
+</footer>
+
+</body>
+</html>
